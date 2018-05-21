@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5 {
     background-color: #fff;
 }
 
+.charImg {
+    width: 200px;
+}
+
 .container { 
     background-color: #fff;
 }
