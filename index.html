@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-white mb-0 collapse" id="topBanner">
         
-        <h1 class="navbar-brand" href="#">Funky Heroes</a>
+        <h1 class="navbar-brand">Funky Heroes</h1>
     
     </nav>
 
@@ -25,7 +25,7 @@
 
             <div class="jumbotron collapse show" id="jumboTop">
                 
-                <h1 class="display-1 text-center">Funky Heroes!!!</h1>
+                <h1 class="display-3 text-center">Funky Heroes</h1>
                 <hr class="my-4">
             
             </div>
@@ -91,50 +91,57 @@
         </div>
 
         <!-- Character Select Row-->
-        <div class="row pb-3" id="charSelect">
+        <div class="row pb-3 collapse show" id="charSelect">
 
             <div class="col">
                 
-                <!-- Character select / Enemies, Flickity -->
-                <div class="main-carousel">
+                <!-- Character select / Flickity -->
+                <h3 class="text-center ">Choose your funky fighter!</h3>
+                <h4 class="text-center">George Clinton</h4>
+                <div class="text-center">
+                    <button class="btn btn-primary" id="chooseCharButton" type="button">
+                        Choose Character
+                    </button>
+                </div>
+                <div class="main-carousel character-select">
                     <div class="carousel-cell my-2 mx-2 is-selected" id="georgeClinton">
-                        <img class="charImg" src="./assets/img/charImg/georgeClinton.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/georgeClinton.jpg" alt="George Clinton">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="bootsy">
-                        <img class="charImg" src="./assets/img/charImg/bootsycollins.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/bootsycollins.jpg" alt="Bootsy Collins">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="billy">
-                        <img class="charImg" src="./assets/img/charImg/billyOcean.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/billyOcean.jpg" alt="Billy Ocean">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="gapBand">
-                        <img class="charImg" src="./assets/img/charImg/gapBand.png" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/gapBand.png" alt="The Gap Band">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="afrika">
-                        <img class="charImg" src="./assets/img/charImg/afrikabambaataa.png" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/afrikabambaataa.png" alt="Afrika Bambaataa">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="mayfield">
-                        <img class="charImg" src="./assets/img/charImg/curtisMayfield.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/curtisMayfield.jpg" alt="Curtis Mayfield">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="mcfWhite">
-                        <img class="charImg" src="./assets/img/charImg/mcfadden_whitehead.png" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/mcfadden_whitehead.png" alt="McFadden and Whitehead">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="brothersJohnson">
-                        <img class="charImg" src="./assets/img/charImg/brothersJohnson.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/brothersJohnson.jpg" alt="The Brothers Johnson">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="cameo">
-                        <img class="charImg" src="./assets/img/charImg/cameo.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/cameo.jpg" alt="Cameo">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="kool">
-                        <img class="charImg" src="./assets/img/charImg/Kool-The-Gang.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/Kool-The-Gang.jpg" alt="Kool and the Gang">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="ewf">
-                        <img class="charImg" src="./assets/img/charImg/earthwindandfire.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/earthwindandfire.jpg" alt="Earth, Wind, and Fire">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="heatwave">
-                        <img class="charImg" src="./assets/img/charImg/heatwave.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/heatwave.jpg" alt="Heatwave">
                     </div>
                     <div class="carousel-cell my-2 mx-2" id="rickJames">
-                        <img class="charImg" src="./assets/img/charImg/rick-james.jpg" alt="placeholder">
+                        <img class="charImg" src="./assets/img/charImg/rick-james.jpg" alt="Rick James">
                     </div>
                 </div>
 
@@ -155,6 +162,14 @@
         <button class="btn btn-primary" id="reload" type="button">
             Reload
         </button>
+        <button class="btn btn-primary" id="testButton" type="button">
+            Test Character Object
+        </button>
+    </div>
+
+    <!-- temporary storage to check element creation-->
+    <div class="container" id="tempStorage">
+        
     </div>
 
     <!-- Script Tags (jQuery is full min) -->

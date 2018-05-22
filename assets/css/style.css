@@ -16,6 +16,16 @@ h1, h2, h3, h4, h5 {
     background-color: #fff;
 }
 
+.charBanner {
+    position: absolute;
+    top: 150px;
+    width: 200px;
+    background-color: #fff;
+    opacity: 0.9;
+    font-size: 0.5rem;
+    z-index: 1;
+}
+
 .charImg {
     width: 200px;
 }
@@ -53,6 +63,7 @@ h1, h2, h3, h4, h5 {
 .jumbotron {
     background-image: url("../img/swirl_pattern.png");
     border: 5px solid #add982;
+    height: 15rem;
 }
 
 /* For rainbow border */
@@ -78,7 +89,7 @@ h1, h2, h3, h4, h5 {
     max-height: 50px !important;
 }
 
-.navbar h1 {
+.navbar-brand {
     font-family: "Bungee", Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: #add982;
@@ -100,3 +111,22 @@ h1, h2, h3, h4, h5 {
     padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
     box-sizing: content-box; /* So the width will be 100% + 17px */
 }
+
+/* To change some presentation for mobile
+@include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  } */
